@@ -68,7 +68,7 @@ const UpdateToken = React.useContext(TaskContext).UpdateToken
                 console.log(err)
             })
 
-            navigate("/")
+            navigate("/home")
         }
     })
     .catch((err)=>{

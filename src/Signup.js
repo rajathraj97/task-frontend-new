@@ -52,7 +52,7 @@ const SignUp =() => {
             console.log(res)
             if(res.data.hasOwnProperty('_id')){
                 Swal.fire('Registration Sucessfull')
-                navigate("/login")
+                navigate("/home")
             }else{
                 Swal.fire(
                     'An Unknown Error Occured',
