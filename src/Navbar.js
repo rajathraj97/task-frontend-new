@@ -40,7 +40,7 @@ const Navbar = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             TASK-MANAGER
           </Typography>
-          {localStorage.getItem('token') ? <Button color="inherit" onClick={()=>{handelLogout()}}>LogOut</Button> : <Link to="/login" style={{textDecoration:"none",color:"white"}}><Button color="inherit">Login</Button></Link>}
+          {localStorage.getItem('token') ? <Button color="inherit" onClick={()=>{handelLogout()}}>LogOut</Button> : <Link to="/" style={{textDecoration:"none",color:"white"}}><Button color="inherit">Login</Button></Link>}
         </Toolbar>
       </AppBar>
     </Box>
