@@ -1,3 +1,15 @@
+# Project Title 
+This project is titled as Task Manager App 
+
+# Usage
+
+Initially Users are required to Create account by giving username,email & password
+after sucessful registration it wil redirect automatically to Login-Page
+Users should login 
+after login user will be able to add Task,Update task as completed and delte task
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +80,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
