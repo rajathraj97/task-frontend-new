@@ -48,7 +48,6 @@ const Navbar = () => {
     <Routes>
         <Route path="/" element={localStorage.getItem('token') ?<Home/>:<Login />}/>
         <Route path="/home" element={localStorage.getItem('token') ?<Home/>:<Login/>}/>
-        <Route path="*" element={<Notfound/>}/>
         <Route path="/signup" element={<SignUp/>}/>
     </Routes>
     </div>
