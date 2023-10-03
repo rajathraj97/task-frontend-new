@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Navbar';
+import { createContext, useState } from 'react';
+
+export const TaskContext = createContext()
 
 function App() {
+  const[tasks,setTasks] = useState([])
+  const[token,setToken] = useState("")
+  const UpdateTasks = (data)=>{
+    setTasks(data)
+  }
+  const UpdateToken = (data)=>{
+    setToken(data)
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TaskContext.Provider value={{tasks,UpdateTasks,token,UpdateToken}}>
+      <Navbar/>
+      </TaskContext.Provider>
     </div>
   );
 }
